@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "CommonJS",
+    "outDir": "./dist", // Pasta onde os arquivos TypeScript compilados serão colocados
+    "rootDir": "./src", // Pasta onde estão os arquivos TypeScript do seu projeto
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts" // Padrão de inclusão dos arquivos TypeScript do seu projeto
+  ],
+  "exclude": [
+    "node_modules" // Pasta para excluir da compilação TypeScript
+  ]
+}
