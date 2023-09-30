@@ -1,27 +1,58 @@
-# React + TypeScript + Vite
+# Projeto CRUD em Node.js com Sequelize (Backend) e React (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este projeto é um aplicativo simples de CRUD (Create, Read, Update, Delete) desenvolvido em Node.js no backend e React no frontend. Ele utiliza o Sequelize como ORM para interagir com o banco de dados MySQL e Express para gerenciar as rotas no backend. No frontend, React Router é usado para a navegação entre telas e o Axios para fazer requisições HTTP.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto permite gerenciar usuários e seus endereços. As principais funcionalidades incluem adicionar, excluir, editar e visualizar usuários. Além disso, é possível adicionar e remover endereços associados a cada usuário.
 
-## Expanding the ESLint configuration
+## Configuração do Frontend (React)
+1. **Navegue até o diretório do frontend:**
+   ```bash
+   cd nome-do-repositorio/frontend
+   
+2. **Instale as dependências:**
+    ```bash
+    npm install
+    
+3. **Inicie o aplicativo React:**
+    ```bash
+    npm dev
+O aplicativo estará disponível em http://localhost:4000.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+### Criar Usuário
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Acesse a página de criação de usuário.
+- Preencha o formulário e clique em "Salvar".
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Editar Usuário
+
+- Acesse a página de edição de usuário.
+- Faça as alterações desejadas e clique em "Atualizar".
+- Adicione ou remova endereços associados ao usuário.
+
+### Listar Usuários
+
+- Visualize a lista de usuários cadastrados.
+- Clique em um usuário para visualizar detalhes.
+
+### Visualizar Usuário
+
+- Acesse a página de visualização de usuário.
+- Veja informações detalhadas e endereços associados.
+
+### Adicionar/Remover Endereço
+
+- Na página de edição do usuário, é possível adicionar novos endereços ou remover os existentes.
+
+## Tecnologias Utilizadas
+
+### Frontend (React)
+
+- [React.js](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de usuário.
+- [React Router Dom](https://reactrouter.com/web/guides/quick-start) - Roteamento para aplicativos React.
+- [Axios](https://axios-http.com/) - Cliente HTTP para fazer requisições HTTP.
+
+
